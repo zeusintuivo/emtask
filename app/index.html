@@ -21,5 +21,17 @@
     <script src="assets/emtasks.js"></script>
 
     {{content-for "body-footer"}}
+
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyArER4_4H9naaOLCzfsJJO6U3ZZ-nnCprs",
+        authDomain: "emtasks-5541c.firebaseapp.com",
+        databaseURL: "https://emtasks-5541c.firebaseio.com",
+        storageBucket: "emtasks-5541c.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
   </body>
 </html>

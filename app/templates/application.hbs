@@ -1,3 +1,31 @@
-<h2 id="title">Welcome to Ember</h2>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+          {{#link-to 'home' class="navbar-brand"}}EM Tasks{{/link-to}}
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">{{#link-to 'home'}}Home{{/link-to}}</li>
+                <li class="">{{#link-to 'tasks'}}Tasks{{/link-to}}</li>
+                <li class="">{{#link-to 'tasks.new'}}New Tasks{{/link-to}}</li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
 
-{{outlet}}
+<div class="container">
+
+   <div class="row">
+       <div class="col-md-12">
+        {{outlet}}
+       </div>
+   </div>
+
+</div><!-- /.container -->
+
