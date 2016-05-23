@@ -8,7 +8,7 @@ export default Ember.Route.extend({
         type: 'task',
         attributes: {
           title: 'Fewer Moving Parts',
-          date: '27/05/2016',
+          date: '2016-05-22T00:00:00.000Z',
           description: 'description for today is'
         },
         relationships: {}
@@ -17,7 +17,7 @@ export default Ember.Route.extend({
         type: 'task',
         attributes: {
           title: 'More Fewer Moving Parts',
-          date: '28/05/2016',
+          date: '2016-05-22T00:00:00.000Z',
           description: 'more description for today is'
         },
         relationships: {}
