@@ -2,7 +2,26 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   actions: {
-    editTask: function (id) {
+    delTask(id) {
+      this.store.findRecord('task', id).then(function(task){
+        task.deleteRecord();
+
+
+
+        task.save();
+
+        // Clear Form
+        //task.setProperties({
+        //  title: '',
+        //  description: '',
+        //  date: ''
+        //});
+        //task.transitionTo('tasks');
+
+
+      });
+    },
+    editTask(id) {
       //var self = this;
 
       let title = this.get('model.title');

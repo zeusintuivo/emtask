@@ -12,4 +12,5 @@
       {{textarea  class="form-control" value=model.description placeholder="Describe Tasks..."}}
     </div>
     <button {{action 'editTask' model.id}} class="btn btn-primary">Submit</button>
+    <button {{action 'delTask' model.id}} class="btn btn-danger">Delete</button>
 </form>
