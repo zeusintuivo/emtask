@@ -16,13 +16,13 @@ export default Ember.Controller.extend({
         //  description: '',
         //  date: ''
         //});
-        //task.transitionTo('tasks');
+        //task.transitionToRoute('tasks');
 
 
       });
     },
     editTask(id) {
-      //var self = this;
+      let self = this;
 
       let title = this.get('model.title');
       let description = this.get('model.description');
@@ -34,18 +34,18 @@ export default Ember.Controller.extend({
         task.set('description', description);
         task.set('date', new Date(date));
 
-        //self.transitionTo('tasks');
+        self.transitionToRoute('tasks');
         // Save to Database
         return task.save();
 
       });
 
 
+
       console.log(savedTask);
       if (savedTask) {
         console.log("saved action");
-        //this.transitionTo('tasks');
-
+        //self.transitionToRoute('tasks');
       }
 
 
